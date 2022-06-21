@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    background: rgb(254, 254, 254);
+    background: linear-gradient(300deg, rgb(254, 254, 254) 0%, rgba(250, 165, 0, 1) 100%);
+  
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+  }
+  main {
+    border: solid 1px gray;
+    border-radius: 5px;
+  }
+  
+  main > button {
+    background-color: #fbc55b;
+    width: 10rem;
+    border: solid 1px gray;
+    border-radius: 5px;
+    color: black;
+  
+    margin: 20px;
+    font-size: 10rem;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  main > button:hover {
+    background-color: rgb(205, 205, 205);
+    opacity: 0.6;
+  }
+  
+  #counter {
+    font-size: 10rem;
+    margin: 1rem;
+  }
