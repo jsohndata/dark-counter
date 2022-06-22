@@ -1,29 +1,22 @@
-const counterEl = document.getElementById('counter')
-const totalCount = document.getElementById('total')
-
+const displayCounter = document.getElementsByClassName('displayCounter')[0]
 let currentCount = 0
-let sumTotalCount = 0
 
-
-const increaseCounter = function() {
-    currentCount++
-    sumTotalCount++
-    counterEl.innerHTML = currentCount
+const renderResult = function(paramWhere,paramWhat) {
+    paramWhere.innerHTML = paramWhat
 }
 
-const decreaseCounter = function() {
-    currentCount--
-    currentCount
+const increaseCounter = () => {
+    currentCount ++
+    renderResult(displayCounter,currentCount)
+}
+
+const decreaseCounter = () =>  {
+    currentCount --
     currentCount < 0 ? currentCount = 0 : null
-    
-    counterEl.innerHTML = currentCount
+    renderResult(displayCounter,currentCount)
 }
 
-const totalCounter = function() {
-    totalCount.innerText = `Sum Total ${sumTotalCount}`
-}
-
-const resetCounter = function() {
-    counterEl.innerText = 0
+const resetCounter = () => { 
     currentCount = 0
+    renderResult(displayCounter,currentCount)
 }

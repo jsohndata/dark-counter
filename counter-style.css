@@ -1,40 +1,84 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-    background: rgb(254, 254, 254);
-    background: linear-gradient(300deg, rgb(254, 254, 254) 0%, rgba(250, 165, 0, 1) 100%);
-  
-    background-repeat: no-repeat;
-    height: 100vh;
-    text-align: center;
-  }
-  main {
-    border: solid 1px gray;
-    border-radius: 5px;
-  }
-  
-  main > button {
-    background-color: #fbc55b;
-    width: 10rem;
-    border: solid 1px gray;
-    border-radius: 5px;
-    color: black;
-  
-    margin: 20px;
-    font-size: 10rem;
-    opacity: 1;
-    transition: 0.3s;
-  }
-  
-  main > button:hover {
-    background-color: rgb(205, 205, 205);
-    opacity: 0.6;
-  }
-  
-  #counter {
-    font-size: 10rem;
-    margin: 1rem;
-  }
+/* Root */
+:root {
+  --color-grey-dark:     hsla(191, 100%, 3%, 1);
+  --color-grey-middle:   hsla(197, 66%, 84%, 0.51);
+  --color-grey-eeeeee:   hsl(0, 0%, 93%, 1);
+  --color-light-bright:  hsla(360, 100%, 100%, 1);
+  --color-fuchsia:       hsla(300,100%,50%,1);
+  --color-transparent:   transparent;
+}
+
+
+
+/* Font: Family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1,h2,h3,p { font-family: 'Montserrat', sans-serif; }
+
+
+/* Font: Size */
+header > h1   { font-size: 4.2rem; }
+main > h2     { font-size: 20.0rem; }
+main > button { font-size: 2.5rem; }
+
+
+
+/* Font: Attribute */
+header > h1 { 
+  color: var(--color-grey-middle);
+  font-weight: 200;
+}
+
+main > button { color: var(--color-fuchsia); }
+
+h1,h2,h3,p,
+main > button:hover { color: var(--color-light-bright); }
+
+h2 { 
+
+  background: -webkit-linear-gradient(var(--color-grey-eeeeee), var(--color-grey-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/* Layout */
+body { 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: var(--color-grey-dark);
+ }
+
+header > h1,
+main > h2 { margin: 0; padding: 0; }
+
+
+/* Button */
+main > button {
+  aspect-ratio: 16/9;
+  width: 10rem;
+  margin: 0.5rem;
+  background-color: var(--color-transparent);
+  border-radius: 1.1rem;
+  border: 2px solid var(--color-grey-middle);
+  opacity: 1;
+}
+
+main > button:hover {
+  box-shadow: 10px 10px 50px 0px var(--color-light-bright);
+  -webkit-box-shadow: 10px 10px 50px 0px var(--color-light-bright);
+  -moz-box-shadow: 10px 10px 50px 0px var(--color-light-bright);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+main > button:nth-child(2) { cursor: n-resize; }
+main > button:nth-child(3) { cursor: s-resize; }
+main > button:last-child { cursor: alias; }
+
+
+/* Footer */
+footer p {color: var(--color-grey-middle);}
