@@ -8,5 +8,5 @@ Coding with the students on Week 7 at Boca Code.
 - If counter goes below zero, redner it as zero.
 
 ## Link
-Demo can be found on [Firebase](https://jsohndata-counter.web.app/).
+Here is [demo of the code](https://jsohndata-counter.web.app/).
 
