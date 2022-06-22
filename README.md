@@ -10,5 +10,6 @@ Class titled "BOM (Browser Object Model) and DOM (Document Object Model)".
 
 ## Link
 Here is a [demo of the code](https://jsohndata-counter.web.app/)
+
 ![Screenshot of the counter demo.](https://raw.githubusercontent.com/jsohndata/counter/main/image/counter.png)
 
