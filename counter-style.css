@@ -23,6 +23,9 @@ main > button { font-size: 2.5rem; }
 
 
 /* Font: Attribute */
+a {
+  text-decoration: none;
+}
 header > h1 { 
   color: var(--color-grey-middle);
   font-weight: 200;
