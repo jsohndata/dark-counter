@@ -1,6 +1,5 @@
 # Counter
-Coding with the students on Week 7 at Boca Code. 
-Class titled "BOM (Browser Object Model) and DOM (Document Object Model)".
+Counter app which counts up, down and resets.
 
 ## Link
 Here is a [demo of the code](https://jsohndata-counter.web.app/).
