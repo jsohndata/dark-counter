@@ -1,0 +1,24 @@
+{
+  "name": "app-counter",
+  "version": "1.0.0",
+  "description": "Counter app which counts up, down and resets.",
+  "main": "index.js",
+  "homepage": "https://jsohndata.github.io/dark-counter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsohndata/counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsohndata/counter/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "devDependencies": {}
+}
